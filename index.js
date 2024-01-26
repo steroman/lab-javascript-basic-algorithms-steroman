@@ -58,3 +58,38 @@ if (hackerOne > hackerTwo) {
 } else {
     console.log(`What?! You both have the same name?`);
 }
+
+
+// Bonus 1
+
+let sourceText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et dolor sit amet nunc egestas semper. Nullam odio dui, efficitur non pretium eget, aliquet sed nibh. In mattis enim vitae orci mattis luctus. Nulla enim dolor, vestibulum aliquet lacinia sit amet, ornare eget neque. Donec auctor accumsan urna id lacinia. Quisque libero eros, consectetur nec diam quis, rhoncus consectetur lorem. Sed et elementum quam, quis imperdiet odio. Etiam quis feugiat neque. Integer faucibus tristique tortor eget volutpat. Nunc aliquam consectetur velit vel posuere. Nullam finibus convallis turpis, aliquam semper erat. Maecenas metus erat, condimentum at pretium vitae, tempor id lacus. In eget leo enim. Morbi sed tempor magna.
+
+Nulla ut tempor tellus. Sed pretium leo lectus, vitae semper erat euismod vel. Pellentesque vitae purus lectus. Mauris ut aliquam justo. Morbi ullamcorper, metus et placerat mollis, nisl velit dictum est, non sagittis nibh nunc at turpis. Vestibulum ullamcorper libero id metus pretium fermentum. Etiam consequat metus sagittis neque efficitur, at molestie quam auctor. Proin quis ultrices neque. Nam rhoncus a sem ut finibus. Pellentesque facilisis tempor odio, vel vestibulum mauris porttitor sit amet.
+
+Duis consequat consectetur ligula. Suspendisse tortor elit, condimentum et eros sed, pretium rhoncus erat. Aenean eget turpis in nisi porttitor rhoncus. Donec sed mi erat. Donec eget lectus ipsum. Quisque eget luctus enim. Nulla facilisi. Cras id lacus neque. Praesent lacinia, sem non ultrices lacinia, libero justo scelerisque metus, vel sagittis sapien arcu ac metus. Proin tincidunt auctor sollicitudin. Morbi mattis viverra turpis non bibendum. Vivamus finibus quam et ex efficitur, non convallis eros porta. Phasellus laoreet enim ac mollis finibus. Etiam venenatis, lacus vel semper pulvinar, sem sapien vulputate augue, sit amet aliquam quam ipsum eget dolor. Nulla auctor et lorem ut consequat. Donec facilisis volutpat turpis, at iaculis erat vestibulum ac.`
+
+let wordCount = 0;
+let isNewWord = true;
+
+for (let i = 0; i < sourceText.length; i++) {
+    if (sourceText[i] === " " || sourceText[i] === ", " || sourceText[i] === ". " || sourceText[i] === ".") {
+        isNewWord = true;
+    } else {
+        if (isNewWord) {
+            wordCount++;
+            isNewWord = false;
+        }
+    }
+}
+
+console.log(`The lorem ipsum text has ${wordCount} words.`);
+
+let etCount = 0;
+
+for (let i = 0; i < sourceText.length; i++) {
+        if (sourceText[i] === " " && sourceText[i + 1] === "e" && sourceText[i + 2] === "t" && sourceText[i + 3] === " ") {
+            etCount++;
+          }
+}
+
+console.log(`The word 'et' appears ${etCount} times in the lorem ipsum text.`);
