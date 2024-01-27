@@ -59,7 +59,6 @@ if (hackerOne > hackerTwo) {
     console.log(`What?! You both have the same name?`);
 }
 
-
 // Bonus 1
 
 let sourceText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et dolor sit amet nunc egestas semper. Nullam odio dui, efficitur non pretium eget, aliquet sed nibh. In mattis enim vitae orci mattis luctus. Nulla enim dolor, vestibulum aliquet lacinia sit amet, ornare eget neque. Donec auctor accumsan urna id lacinia. Quisque libero eros, consectetur nec diam quis, rhoncus consectetur lorem. Sed et elementum quam, quis imperdiet odio. Etiam quis feugiat neque. Integer faucibus tristique tortor eget volutpat. Nunc aliquam consectetur velit vel posuere. Nullam finibus convallis turpis, aliquam semper erat. Maecenas metus erat, condimentum at pretium vitae, tempor id lacus. In eget leo enim. Morbi sed tempor magna.
